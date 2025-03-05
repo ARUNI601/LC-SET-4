@@ -1,0 +1,13 @@
+class Solution(object):
+    def countDigits(self, num):
+        count=0
+        b=list(str(num))
+        c=len(b)
+        for i in b:
+            if num%int(i)==0:
+                count+=1
+        return count
+solution=Solution()
+
+
+        

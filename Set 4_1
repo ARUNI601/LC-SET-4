@@ -1,0 +1,14 @@
+class Solution(object):
+    def firstUniqChar(self, s):
+        c= {}
+        for i in s:
+            c[i] =c.get(i, 0) + 1
+        ind=0
+        for i in s:
+            if c[i] == 1:
+                return ind
+            ind+=1
+        return -1
+solution = Solution()
+
+        

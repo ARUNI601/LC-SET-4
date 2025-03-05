@@ -1,0 +1,10 @@
+class Solution(object):
+    def mostWordsFound(self, sentences):
+        d=[]
+        for i in sentences:
+            b=i.split()
+            a=len(b)
+            d.append(a)
+        return max(d)
+solution=Solution()
+        

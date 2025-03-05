@@ -1,0 +1,15 @@
+class Solution(object):
+    def countKeyChanges(self, s):
+        count=0
+        s=s.lower()
+        for i in range(len(s)-1):
+            a=i+1
+            try:
+                if s[i]==s[a]:
+                    continue
+                else:
+                    count+=1
+            except:
+                pass
+        return count
+solution=Solution()

@@ -1,0 +1,15 @@
+class Solution(object):
+    def subtractProductAndSum(self, n):
+        a=[]
+        while(n!=0):
+            b=n%10
+            a.append(b)
+            n/=10
+        p=1
+        s=0
+        for i in a:
+            p*=i
+            s+=i
+        diff=p-s
+        return diff
+        
